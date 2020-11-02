@@ -7,7 +7,7 @@
 ## Table of contents
 
 #### * [General info](#general-info)
-#### * [Status] (#status)
+#### * [Status](#status)
 #### * [Information](#information)
 
 
