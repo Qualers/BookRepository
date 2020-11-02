@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
+<head>
+    <meta charset="UTF-8">
+    <title>BookRepository</title>
+    <meta http-equiv="Content-Language" content="pl"/>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="view-container">
+
+
+    <div class="app-header-container">
+        <h2 class="app-header">BOOK REPOSITORY</h2>
+    </div>
+
+    <div class="navigation-menu">
+        <div class="navigation-menu-item">
+            <a th:href="@{/books}">View All Books</a>
+        </div>
+        <div class="navigation-menu-item">
+            <a th:href="@{/books/new}">Add Book</a>
+        </div>
+    </div>
+
+    <div class="view">
+
+        <table class="book-list">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th class="book-list-publishment-year">Publishment Year</th>
+                <th>Category</th>
+            </tr>
+            <tr class="book-item" th:each="book: ${books}">
+
+                <td class="book-item-cell book-list-id">
+                    <span th:text="${book.getId()}"/>
+                </td>
+                <td class="book-item-cell book-list-title">
+                    <span th:text="${book.getTitle()}"/>
+                </td>
+                <td class="book-item-cell book-list-author">
+                    <span th:text="${book.getAuthor()}"/>
+                </td>
+                <td class="book-item-cell book-list-publishment-year">
+                    <span th:text="${book.getPublishmentyear()}"/>
+                </td>
+                <td class="book-item-cell book-list-category">
+                    <span th:text="${book.getCategory()}"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>

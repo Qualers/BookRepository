@@ -1,0 +1,107 @@
+body{
+    display:flex;
+    padding:0;
+    margin:0;
+    padding-top:50px;
+    font-family:Verdana;
+ justify-content: center;
+}
+
+.view-container{
+   width:800px;
+    box-sizing:border-box;
+    padding:20px;
+}
+
+.app-header-container {
+    color: red;
+    font-size: bold;
+    margin-bottom 5px;
+}
+
+.app-header{
+    text-align: center;
+}
+
+.navigation-menu{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.navigation-menu-item{
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.view{
+
+}
+
+.book-list{
+    width: 100%;
+}
+
+.book-list th{
+    padding: 10px;
+      border-bottom: 3px solid #ddd;
+}
+
+.book-list th.book-list-publishment-year{
+    max-width: 50px;
+}
+
+.book-item{
+
+}
+
+td.book-item-cell {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
+
+
+.book-item-cell.book-list-id{
+    text-align: center;
+}
+
+.book-item-cell.book-list-publishment-year{
+    text-align: center;
+    max-width: 50px;
+}
+
+.input{
+border-bottom: 3px solid #ddd;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.validation-error{
+    color: red;
+    padding: 5px 0;
+}
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
